@@ -10,7 +10,7 @@ public class CzyOtwarte : MonoBehaviour
     private void Start()
     {
         result = new int[] { 5, 5, 5, 5 };
-        correctCombination = new int[] { 1, 3, 5, 7 };
+        correctCombination = new int[] { 2, 4, 1, 0 };
         Rotacja.Rotated += CheckResults;
     }
     private void CheckResults(string wheelName, int number)
