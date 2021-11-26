@@ -19,6 +19,7 @@ public class Rotacja : MonoBehaviour
         if (coroutineAllowed)
         {
             StartCoroutine("RotateWheel");
+            
         }
     }
     private IEnumerator RotateWheel()
@@ -27,6 +28,7 @@ public class Rotacja : MonoBehaviour
         for(int i = 0; i <= 11; i++)
         {
             transform.Rotate(0f, -3f, 0f);
+            FindObjectOfType<AudioManager>().Play("locker1");
             yield return new WaitForSeconds(0.01f);
         }
         coroutineAllowed = true;
