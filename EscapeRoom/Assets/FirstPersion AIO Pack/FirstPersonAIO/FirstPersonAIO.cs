@@ -359,11 +359,16 @@ public class FirstPersonAIO : MonoBehaviour {
             playerCamera.transform.localRotation = Quaternion.Euler(-followAngles.x + originalRotation.x,0,0);
             transform.localRotation =  Quaternion.Euler(0, followAngles.y+originalRotation.y, 0);
         }
-    
+
         #endregion
 
+        if (Input.GetMouseButtonDown(1))
+        {
+            enableCameraMovement = !enableCameraMovement;
+        }
+
         #region Input Settings - Update
-        if(canHoldJump ? (canJump && Input.GetButton("Jump")) : (Input.GetButtonDown("Jump") && canJump) ){
+        if (canHoldJump ? (canJump && Input.GetButton("Jump")) : (Input.GetButtonDown("Jump") && canJump) ){
             jumpInput = true;
         }else if(Input.GetButtonUp("Jump")){jumpInput = false;}
         
