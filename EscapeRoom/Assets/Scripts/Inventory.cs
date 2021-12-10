@@ -44,14 +44,20 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if(other.tag == "Item")
+        Debug.Log("Trigger");
+        RaycastHit rayHit;
+        var ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
+        if (Input.GetMouseButtonDown(0))
         {
-            GameObject itemPickedUp = other.gameObject;
-            Item item = itemPickedUp.GetComponent<Item>();
+            if (Physics.Raycast(ray, out rayHit))
+            {
+                GameObject itemPickedUp = other.gameObject;
+                Item item = itemPickedUp.GetComponent<Item>();
 
-            AddItem(itemPickedUp, item.ID, item.type, item.description, item.icon);
+                AddItem(itemPickedUp, item.ID, item.type, item.description, item.icon);
+            }
         }
     }
 
