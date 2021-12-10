@@ -44,7 +44,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay(Collider other) //TUTAJ JESZCZE CHYBA SPRAWDZIÆ TRZEBA BÊDZIE TAG 
     {
         //Debug.Log("Trigger");
         RaycastHit rayHit;
@@ -53,10 +53,13 @@ public class Inventory : MonoBehaviour
         {
             if (Physics.Raycast(ray, out rayHit))
             {
-                GameObject itemPickedUp = other.gameObject;
-                Item item = itemPickedUp.GetComponent<Item>();
+                if (other.gameObject.CompareTag("Item"))
+                {
+                    GameObject itemPickedUp = other.gameObject;
+                    Item item = itemPickedUp.GetComponent<Item>();
 
-                AddItem(itemPickedUp, item.ID, item.type, item.description, item.icon);
+                    AddItem(itemPickedUp, item.ID, item.type, item.description, item.icon);
+                }
             }
         }
     }
