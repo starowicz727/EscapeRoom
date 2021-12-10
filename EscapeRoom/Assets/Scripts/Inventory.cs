@@ -46,7 +46,7 @@ public class Inventory : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("Trigger");
+        //Debug.Log("Trigger");
         RaycastHit rayHit;
         var ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
         if (Input.GetMouseButtonDown(0))
