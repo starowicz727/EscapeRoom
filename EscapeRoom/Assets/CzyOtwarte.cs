@@ -34,8 +34,7 @@ public class CzyOtwarte : MonoBehaviour
         {
             Debug.Log("Opened!");
             portal.SetActive(true);
-            AudioSource audio = portal.GetComponent<AudioSource>();
-            audio.Play();
+            FindObjectOfType<AudioManager>().Play("portal1");
         }
     }
 
