@@ -5,6 +5,7 @@ using UnityEngine;
 public class CatKeyReplacement : MonoBehaviour
 {
     public GameObject key;
+    public GameObject explosion;
     private void OnTriggerStay(Collider other)
     {
        // Debug.Log("Trigger kot ");
@@ -20,7 +21,8 @@ public class CatKeyReplacement : MonoBehaviour
                 //}
                 if (rayHit.collider.gameObject.Equals(this.gameObject))
                 {
-                    Debug.Log("hit kot ");
+                   // Debug.Log("hit kot ");
+                    explosion.SetActive(true);
                     key.SetActive(true);
                     this.gameObject.SetActive(false);
                 }
