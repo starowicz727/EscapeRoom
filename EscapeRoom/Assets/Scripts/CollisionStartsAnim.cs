@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollisionStartsAnim : MonoBehaviour  //skrypt przypisany do przedmiotu który nie znika ze sceny 
+public class CollisionStartsAnim : MonoBehaviour  //skrypt przypisany do przedmiotu ktï¿½ry nie znika ze sceny 
 {                                                 //czyli np. odtwarzacz VHS, szafa
     public GameObject collisionParticipant;
     public ParticleSystem explosion;
