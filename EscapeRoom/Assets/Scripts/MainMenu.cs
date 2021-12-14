@@ -20,5 +20,10 @@ public class MainMenu : MonoBehaviour
         {
             Application.Quit();
         }
+        //do testu
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            SceneManager.LoadScene("Level2");
+        }
     }
 }
