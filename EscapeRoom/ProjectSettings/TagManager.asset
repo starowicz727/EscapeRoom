@@ -9,6 +9,9 @@ TagManager:
   - keyhole
   - moving_wall
   - vhs
+  - book
+  - vhsPlayer
+  - books
   layers:
   - Default
   - TransparentFX

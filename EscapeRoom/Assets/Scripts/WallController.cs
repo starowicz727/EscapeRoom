@@ -4,12 +4,23 @@ using UnityEngine;
 
 public class WallController : MonoBehaviour
 {
+    public GameObject movingWall;
+    
     private void OnTriggerEnter(Collider other){
-        if(other.tag == "vhs"){
-           Animator anim = other.GetComponentInChildren<Animator>();  
-           anim.SetTrigger("vhs");
-           //explosion.gameObject.SetActive(true);
-           //collisionParticipant.SetActive(false);
+        if(other.tag == "vhsPlayer" && tag == "vhs"){
+            StartAnim();
+        }        
+    }
+
+    private void OnTriggerStay(Collider other){
+        //wiecej sekund
+        if(other.tag == "books" && tag == "book"){
+            StartAnim();
         }
+    }
+
+    private void StartAnim(){
+        Animator anim = movingWall.GetComponent<Animator>(); 
+        anim.SetTrigger("startAnim");
     }
 }
