@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject menu;
-    private bool m = false;
     public void PlayGame()
     {
         SceneManager.LoadScene("Level1");
@@ -26,19 +24,6 @@ public class MainMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             SceneManager.LoadScene("Level2");
-        }
-
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            if(!m){
-                //kursor na menu
-                menu.SetActive(true);
-                m = true;
-            }
-            else{
-                menu.SetActive(false);
-                 m = false;
-            }            
         }
     }
 }

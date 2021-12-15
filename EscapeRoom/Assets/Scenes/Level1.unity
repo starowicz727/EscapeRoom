@@ -15452,7 +15452,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1294118134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5883d3d7517901942a1e4f387e12b770, type: 3}
+  m_Script: {fileID: 11500000, guid: 11c10640c87c99a4b83de86a231b7acb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 1947671249}
@@ -21680,7 +21680,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5883d3d7517901942a1e4f387e12b770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: {fileID: 0}
 --- !u!1 &2006973737
 GameObject:
   m_ObjectHideFlags: 0
