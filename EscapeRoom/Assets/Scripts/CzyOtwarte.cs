@@ -5,8 +5,9 @@ using UnityEngine;
 public class CzyOtwarte : MonoBehaviour
 {
     private int[] result, correctCombination;
-    public GameObject portal;
+    public GameObject portal;    
     public int Scena;
+    public GameObject door;
     // Start is called before the first frame update
     private void Start()
     {
@@ -66,6 +67,7 @@ public class CzyOtwarte : MonoBehaviour
             {
                 Debug.Log("Opened!");
                 portal.SetActive(true);
+                door.SetActive(false);
                 FindObjectOfType<AudioManager>().Play("portal1");
             }
         }
