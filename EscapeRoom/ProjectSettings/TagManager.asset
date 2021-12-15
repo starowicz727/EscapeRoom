@@ -8,6 +8,7 @@ TagManager:
   - Clothes
   - keyhole
   - moving_wall
+  - vhs
   layers:
   - Default
   - TransparentFX
