@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: backgroundMusic1
+  - name: backgroundMenu
     clip: {fileID: 8300000, guid: 2057c241681b1864f978b47564e3a0a6, type: 3}
     source: {fileID: 0}
     volume: 0.3
@@ -60,5 +60,11 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 1feb2908b00905f4bbda8edca741dff6, type: 3}
     source: {fileID: 0}
     volume: 0.07
+    pitch: 1
+    loop: 1
+  - name: backgroundMusic1
+    clip: {fileID: 8300000, guid: 2266efdbfabbbcf4ea1b191a4f39b9b9, type: 3}
+    source: {fileID: 0}
+    volume: 0.01
     pitch: 1
     loop: 1

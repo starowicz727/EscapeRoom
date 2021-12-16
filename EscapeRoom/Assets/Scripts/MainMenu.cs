@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
     {
         if (GameState.SoundOn)
         {
-            FindObjectOfType<AudioManager>().Play("backgroundMusic1");
+            FindObjectOfType<AudioManager>().Play("backgroundMenu");
         }
     }
     public void PlayGame()

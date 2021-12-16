@@ -17,12 +17,12 @@ public class OptionMenu : MonoBehaviour
     public void SoundOn()
     {
         GameState.SoundOn = true;
-        FindObjectOfType<AudioManager>().Play("backgroundMusic1");
+        FindObjectOfType<AudioManager>().Play("backgroundMenu");
     }
     public void SoundOff()
     {      
         GameState.SoundOn = false;
-        FindObjectOfType<AudioManager>().Stop("backgroundMusic1"); //musimy wyłączyć muzykę w menu 
+        FindObjectOfType<AudioManager>().Stop("backgroundMenu"); //musimy wyłączyć muzykę w menu 
     }
     public void Update()
     {
