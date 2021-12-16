@@ -68,9 +68,9 @@ MonoBehaviour:
     volume: 0.01
     pitch: 1
     loop: 1
-  - name: purr
-    clip: {fileID: 8300000, guid: 118e6d1210df8a140bd1b7ab8829121b, type: 3}
+  - name: wallMoving
+    clip: {fileID: 8300000, guid: 60325b73c3757c44783dd27b22fc601b, type: 3}
     source: {fileID: 0}
-    volume: 0.19
+    volume: 0.105
     pitch: 1
-    loop: 1
+    loop: 0
