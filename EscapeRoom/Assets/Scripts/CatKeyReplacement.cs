@@ -3,9 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CatKeyReplacement : MonoBehaviour
-{
+{//skrypt przypisany do kota w levelu2, który daje dostêp do klucza 
+
     public GameObject key;
     public GameObject explosion;
+
+    private void Start()
+    {
+       // FindObjectOfType<AudioManager>().Play("purr");
+
+    }
     private void OnTriggerStay(Collider other)
     {
        // Debug.Log("Trigger kot ");
