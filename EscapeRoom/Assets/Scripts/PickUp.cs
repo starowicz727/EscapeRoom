@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUp : MonoBehaviour
+public class PickUp : MonoBehaviour //skrypt przypisany do kamery gracza
 {
     public float pickUpRange = 5;
     public float moveForce = 250;
@@ -12,7 +12,7 @@ public class PickUp : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0)) //KeyCode.E
+        if (Input.GetKeyDown(KeyCode.Mouse0)) //Podniesienie obiektu po naciœniêciu przycisku. Jeœli gracz trzyma jakiœ obiekt to wypuszczenie go
         {
             if (heldObj == null)
             {
@@ -34,7 +34,7 @@ public class PickUp : MonoBehaviour
         }
     }
 
-    void MoveObject()
+    void MoveObject() //poruszanie trzymanym obiektem
     {
         if (Vector3.Distance(heldObj.transform.position, holdParent.position) > 0.1f)
         {
@@ -43,7 +43,7 @@ public class PickUp : MonoBehaviour
         }
     }
 
-    void PickupObject(GameObject pickObj)
+    void PickupObject(GameObject pickObj) //Podnoszenie obiektu
     {
         if (pickObj.GetComponent<Rigidbody>())
         {
@@ -56,7 +56,7 @@ public class PickUp : MonoBehaviour
         }
     }
 
-    void DropObject()
+    void DropObject() //Puszczanie obiektu
     {
         Rigidbody heldRig = heldObj.GetComponent<Rigidbody>();
         heldRig.useGravity = true;

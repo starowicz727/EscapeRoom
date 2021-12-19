@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CzyOtwarte : MonoBehaviour
+public class CzyOtwarte : MonoBehaviour //skrypt przypisany do zamka
 {
     private int[] result, correctCombination;
     public GameObject portal;    
     public int Scena;
     public GameObject door;
     // Start is called before the first frame update
-    private void Start()
+    private void Start() //ustalenie wartoœci pocz¹tkowych oraz poprawnych odpowiedzi
     {
-        if (Scena == 1)
+        if (Scena == 1) 
         {
             result = new int[] { 5, 5, 5, 5 };
             correctCombination = new int[] { 2, 4, 1, 0 };
@@ -23,7 +23,7 @@ public class CzyOtwarte : MonoBehaviour
         }
         Rotacja.Rotated += CheckResults;
     }
-    private void CheckResults(string wheelName, int number)
+    private void CheckResults(string wheelName, int number) //sprawdzenie czy podane zosta³o w³aœciwe has³o
     {
         if (Scena == 1)
         {

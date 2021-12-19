@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Rotacja : MonoBehaviour
+public class Rotacja : MonoBehaviour //skrypt przypisany do poszczególnych kó³ zamka
 {
     public static event Action<string, int> Rotated = delegate { };
     private bool coroutineAllowed;
     private int numberShown;
-    // Start is called before the first frame update
     private void Start()
     {
         coroutineAllowed = true;
@@ -22,7 +21,7 @@ public class Rotacja : MonoBehaviour
             
         }
     }
-    private IEnumerator RotateWheel()
+    private IEnumerator RotateWheel() //obrót kó³ka o jedn¹ wartoœæ oraz uruchomienie dŸwiêku po naciœniêciu
     {
         coroutineAllowed = false;
         for(int i = 0; i <= 11; i++)
