@@ -6,30 +6,31 @@ using UnityEngine.SceneManagement;
 public class menuController : MonoBehaviour
 {
     public GameObject menu;
-    private bool m = false;
+    private bool e = false;
 
     public void Update()
     {
+        //wychodzenie z gry raczej przez przycisk tylko
+        // if (Input.GetKeyDown(KeyCode.Escape))
+        // {
+        //     Application.Quit();
+        // }
+        //do testu
+        // if (Input.GetKeyDown(KeyCode.T))
+        // {
+        //     SceneManager.LoadScene("Level2");
+        // }
+        //esc uruchamia podreczne menu
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
-        }
-        //do testu
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            SceneManager.LoadScene("Level2");
-        }
-
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            if(!m){
+            if(!e){
                 //kursor na menu
                 menu.SetActive(true);
-                m = true;
+                e = true;
             }
             else{
                 menu.SetActive(false);
-                 m = false;
+                 e = false;
             }            
         }
     }
