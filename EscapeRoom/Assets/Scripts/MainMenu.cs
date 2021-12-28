@@ -20,13 +20,19 @@ public class MainMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-    }    
+    }
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("Menu");
+        //gra = true;
+    }       
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
+        // if (Input.GetKeyDown(KeyCode.Escape))
+        // {
+        //     Application.Quit();
+        // }
+
         //do testu
         if (Input.GetKeyDown(KeyCode.T))
         {

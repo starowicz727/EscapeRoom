@@ -16,10 +16,10 @@ public class menuController : MonoBehaviour
         //     Application.Quit();
         // }
         //do testu
-        // if (Input.GetKeyDown(KeyCode.T))
-        // {
-        //     SceneManager.LoadScene("Level2");
-        // }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            SceneManager.LoadScene("Level2");
+        }
         //esc uruchamia podreczne menu
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -30,8 +30,14 @@ public class menuController : MonoBehaviour
             }
             else{
                 menu.SetActive(false);
-                 e = false;
+                e = false;
             }            
-        }
+        }        
     }
+
+    //problem: esc wychodzi z poruszania sie po planszy
+    // public void No(){
+    //     menu.SetActive(false);
+    //     e = false;
+    // }
 }
