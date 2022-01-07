@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour
 
     private void Start()
     {
-        allSlots = 20;
+        allSlots = 9;
         slot = new GameObject[allSlots];
 
         for(int i = 0; i < allSlots; i++)
