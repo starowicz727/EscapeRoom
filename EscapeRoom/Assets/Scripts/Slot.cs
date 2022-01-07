@@ -11,7 +11,7 @@ public class Slot : MonoBehaviour
     public string description;
     public bool empty;
     public Transform slotIconGO;
-    public Sprite icon;
+    public Texture icon;
 
     private void Start()
     {
@@ -19,7 +19,8 @@ public class Slot : MonoBehaviour
     }
     public void UpdateSlot()
     {
-        slotIconGO.GetComponent<Image>().sprite = icon;
+        slotIconGO.GetComponent<RawImage>().texture = icon;
+        slotIconGO.GetComponent<RawImage>().enabled = true;
     }
 
     
