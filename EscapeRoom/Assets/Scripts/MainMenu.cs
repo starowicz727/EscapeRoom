@@ -22,32 +22,12 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void PlayLevel1()
-    {
-        SceneManager.LoadScene("Level1");
-    }
-    public void PlayLevel2()
-    {
-        SceneManager.LoadScene("Level2");
-    }
-    public void PlayLevel3()
-    {
-        SceneManager.LoadScene("Level2");
-    }
-    public void PlaySpecialLevel()
-    {
-        SceneManager.LoadScene("Projekt");
-    }
     public void ReturnToMainMenu()
     {
         SceneManager.LoadScene("Menu");
         //gra = true;
     }       
 
-    public void StartNewGame()//do dokończenia ?
-    {
-
-    }
     
     public void Update()
     {
