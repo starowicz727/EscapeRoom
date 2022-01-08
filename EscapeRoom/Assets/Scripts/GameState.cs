@@ -18,7 +18,18 @@ public class GameState : MonoBehaviour
         Level2Unlocked = level2Unlocked;
     }
 
-    public void UnlockLvl2()
+    public void SaveMyGameState()
+    {
+        DataSave.SaveGameState(SoundOn, Level2Unlocked);
+    }
+    public void LoadMyGameState()
+    {
+        GameState data = DataSave.LoadGameState();
+
+        SoundOn = 
+    }
+
+    public void UnlockLvl2() //użyte gdy w levelu 1 pokazuje się portal
     {
         Level2Unlocked = true;
     }
