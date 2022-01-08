@@ -8,6 +8,7 @@ using JetBrains.Annotations;
 public class GameState : MonoBehaviour
 {
     public static bool SoundOn = true;
+    public static bool Level2Unlocked = false;
     //public static float nOAliensWAD = 0;
     //public static int score = 0;
     //public static string nickGameState = Player.nick;

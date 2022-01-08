@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("backgroundMenu");
         }
     }
-    public void PlayGame()
+    public void PlayGame() // te funkcję można usunąć?
     {
         SceneManager.LoadScene("Level1");
         //gra = true;
@@ -21,11 +21,34 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void PlayLevel1()
+    {
+        SceneManager.LoadScene("Level1");
+    }
+    public void PlayLevel2()
+    {
+        SceneManager.LoadScene("Level2");
+    }
+    public void PlayLevel3()
+    {
+        SceneManager.LoadScene("Level2");
+    }
+    public void PlaySpecialLevel()
+    {
+        SceneManager.LoadScene("Projekt");
+    }
     public void ReturnToMainMenu()
     {
         SceneManager.LoadScene("Menu");
         //gra = true;
     }       
+
+    public void StartNewGame()//do dokończenia ?
+    {
+
+    }
+    
     public void Update()
     {
         // if (Input.GetKeyDown(KeyCode.Escape))
@@ -34,9 +57,9 @@ public class MainMenu : MonoBehaviour
         // }
 
         //do testu
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            SceneManager.LoadScene("Level2");
-        }
+        //if (Input.GetKeyDown(KeyCode.T))
+        //{
+        //    SceneManager.LoadScene("Level2");
+        //}
     }
 }
