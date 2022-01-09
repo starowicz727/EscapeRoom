@@ -26,7 +26,7 @@ public class GameState : MonoBehaviour
     {
         GameState data = DataSave.LoadGameState();
 
-        SoundOn = 
+        //SoundOn = 
     }
 
     public void UnlockLvl2() //użyte gdy w levelu 1 pokazuje się portal
