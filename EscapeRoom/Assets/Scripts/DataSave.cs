@@ -4,19 +4,19 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class DataSave //klasa statyczna ¿eby nie utworzyæ ró¿nych instancji 
 {
-   public static void SaveGameState(bool soundOn, bool level2Unlocked)
+   public static void SaveGameState(bool soundOn, bool level2Unlocked, bool level3Unlocked, bool level3Finished, bool levelSpecialUnlocked)
    {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/FindItGameState.txt"; //persistentDataPath to w³aœciwoœæ uniwersalna dla ka¿dego systemu operacyjnego 
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        GameState gameStateData = new GameState(soundOn, level2Unlocked);
+        PlayerData gameStateData = new PlayerData(soundOn, level2Unlocked, level3Unlocked, level3Finished, levelSpecialUnlocked);
 
         formatter.Serialize(stream, gameStateData);
         stream.Close();
    }
 
-    public static GameState LoadGameState()
+    public static PlayerData LoadGameState() //odczytujemy plik do obiektu PlayerData
     {
         string path = Application.persistentDataPath + "/FindItGameState.txt"; //persistentDataPath to w³aœciwoœæ uniwersalna dla ka¿dego systemu operacyjnego 
         if (File.Exists(path))
@@ -24,7 +24,7 @@ public static class DataSave //klasa statyczna ¿eby nie utworzyæ ró¿nych instanc
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);
 
-            GameState gameStateData = formatter.Deserialize(stream) as GameState;
+            PlayerData gameStateData = formatter.Deserialize(stream) as PlayerData;
             stream.Close();
             return gameStateData;
         }

@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    private void Start()
+    private void Start() //tu wczytujemy dane 
     {
+        GameState.LoadMyGameState();
+
         if (GameState.SoundOn)
         {
             FindObjectOfType<AudioManager>().Play("backgroundMenu");
@@ -19,6 +21,7 @@ public class MainMenu : MonoBehaviour
     }
     public void QuitGame()
     {
+        GameState.SaveMyGameState();
         Application.Quit();
     }
 
