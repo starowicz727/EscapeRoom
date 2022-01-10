@@ -51,7 +51,7 @@ public class ObrazeniaSkrypt : MonoBehaviour
             czyWZasiegu = true;
             //dodaje czas dopóki npc stoi w triggerze gracza
             timer += Time.deltaTime;
-            Debug.Log(timer);
+            //Debug.Log(timer);
             if (timer > 2)
             {
                 DaneGry.zycie -= 10;
@@ -92,7 +92,7 @@ public class ObrazeniaSkrypt : MonoBehaviour
         if(czyWZasiegu == false)
         {
             timer2 += Time.deltaTime;
-            Debug.Log(timer2);
+            //Debug.Log(timer2);
             if (timer2 > 5)
             {
                 if(DaneGry.zycie < 100)

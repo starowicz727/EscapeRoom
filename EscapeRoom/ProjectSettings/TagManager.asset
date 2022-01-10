@@ -12,6 +12,9 @@ TagManager:
   - book
   - vhsPlayer
   - books
+  - Dest
+  - NPC
+  - letter
   layers:
   - Default
   - TransparentFX
