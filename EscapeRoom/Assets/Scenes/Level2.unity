@@ -11598,7 +11598,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh429534
+  m_Name: pb_Mesh107758
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15889,7 +15889,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh429748
+  m_Name: pb_Mesh107972
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21398,6 +21398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35ff57c7bbf58af4eb218b7e7f97e6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scena: 2
 --- !u!1 &5119501286943571229
 GameObject:
   m_ObjectHideFlags: 0
@@ -21454,6 +21455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35ff57c7bbf58af4eb218b7e7f97e6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scena: 2
 --- !u!114 &5119501287166332132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24857,6 +24859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35ff57c7bbf58af4eb218b7e7f97e6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scena: 2
 --- !u!136 &7301211987942689362
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class Rotacja : MonoBehaviour //skrypt przypisany do poszczególnych kó³ z
     public static event Action<string, int> Rotated = delegate { };
     private bool coroutineAllowed;
     private int numberShown;
+    public int scena;
     private void Start()
     {
         coroutineAllowed = true;
@@ -23,19 +24,38 @@ public class Rotacja : MonoBehaviour //skrypt przypisany do poszczególnych kó³ z
     }
     private IEnumerator RotateWheel() //obrót kó³ka o jedn¹ wartoœæ oraz uruchomienie dŸwiêku po naciœniêciu
     {
-        coroutineAllowed = false;
-        for(int i = 0; i <= 11; i++)
+        if (scena == 1 || scena == 2)
         {
-            transform.Rotate(0f, -3f, 0f);
-            FindObjectOfType<AudioManager>().Play("locker1");
-            yield return new WaitForSeconds(0.01f);
+            coroutineAllowed = false;
+            for (int i = 0; i <= 11; i++)
+            {
+                transform.Rotate(0f, -3f, 0f);
+                FindObjectOfType<AudioManager>().Play("locker1");
+                yield return new WaitForSeconds(0.01f);
+            }
+            coroutineAllowed = true;
+            numberShown += 1;
+            if (numberShown >= 10)
+            {
+                numberShown = 0;
+            }
+            Rotated(name, numberShown);
         }
-        coroutineAllowed = true;
-        numberShown += 1;
-        if (numberShown >= 10)
+        if (scena == 3)
         {
-            numberShown = 0;
+            coroutineAllowed = false;
+            for (int i = 0; i <= 13; i++)
+            {
+                transform.Rotate(0f, 0f, 2.1429f);
+                yield return new WaitForSeconds(0.01f);
+            }
+            coroutineAllowed = true;
+            numberShown += 1;
+            if (numberShown >= 13)
+            {
+                numberShown = 1;               
+            }
+            Rotated(name, numberShown);
         }
-        Rotated(name, numberShown);
     }
 }

@@ -21,6 +21,11 @@ public class CzyOtwarte : MonoBehaviour //skrypt przypisany do zamka
             result = new int[] { 5, 5, 5};
             correctCombination = new int[] { 8, 6, 8};
         }
+        else if (Scena == 3)
+        {
+            result = new int[] { 5, 5};
+            correctCombination = new int[] { 12, 6};
+        }
         Rotacja.Rotated += CheckResults;
     }
     private void CheckResults(string wheelName, int number) //sprawdzenie czy podane zosta³o w³aœciwe has³o
@@ -68,6 +73,24 @@ public class CzyOtwarte : MonoBehaviour //skrypt przypisany do zamka
                 Debug.Log("Opened!");
                 portal.SetActive(true);
                 door.SetActive(false);
+                FindObjectOfType<AudioManager>().Play("portal1");
+            }
+        }
+        if (Scena == 3)
+        {
+            switch (wheelName)
+            {
+                case "minute":
+                    result[0] = number;
+                    break;
+                case "hour":
+                    result[1] = number;
+                    break;
+            }
+            if (result[0] == correctCombination[0] && result[1] == correctCombination[1])
+            {
+                Debug.Log("Opened!");
+                portal.SetActive(true);
                 FindObjectOfType<AudioManager>().Play("portal1");
             }
         }
