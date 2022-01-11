@@ -21,12 +21,13 @@ public class GameState : MonoBehaviour
 
     public static void SaveMyGameState() //będziemy zapisywać po przejściu na kolejny level oraz po kliknięciu quit 
     {
-        DataSave.SaveGameState(SoundOn, Level2Unlocked, Level3Unlocked, Level3Finished, LevelSpecialUnlocked);
+        //DataSave.SaveGameState(SoundOn, Level2Unlocked, Level3Unlocked, Level3Finished, LevelSpecialUnlocked);
+        DataSave.SaveGameState(Level2Unlocked, Level3Unlocked, Level3Finished, LevelSpecialUnlocked);
     }
     public static void LoadMyGameState() // będziemy odczytywać dane przy Start() w menu 
     {
         PlayerData data = DataSave.LoadGameState();
-        SoundOn = data.SoundOn;
+        //SoundOn = data.SoundOn;
         Level2Unlocked = data.Level2Unlocked;
         Level3Unlocked = data.Level3Unlocked;
         Level3Finished = data.Level3Finished;

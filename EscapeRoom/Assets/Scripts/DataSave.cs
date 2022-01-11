@@ -4,13 +4,14 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class DataSave //klasa statyczna ¿eby nie utworzyæ ró¿nych instancji 
 {
-   public static void SaveGameState(bool soundOn, bool level2Unlocked, bool level3Unlocked, bool level3Finished, bool levelSpecialUnlocked)
+   public static void SaveGameState(bool level2Unlocked, bool level3Unlocked, bool level3Finished, bool levelSpecialUnlocked)
    {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/FindItGameState.txt"; //persistentDataPath to w³aœciwoœæ uniwersalna dla ka¿dego systemu operacyjnego 
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        PlayerData gameStateData = new PlayerData(soundOn, level2Unlocked, level3Unlocked, level3Finished, levelSpecialUnlocked);
+        //PlayerData gameStateData = new PlayerData(soundOn, level2Unlocked, level3Unlocked, level3Finished, levelSpecialUnlocked);
+        PlayerData gameStateData = new PlayerData(level2Unlocked, level3Unlocked, level3Finished, levelSpecialUnlocked);
 
         formatter.Serialize(stream, gameStateData);
         stream.Close();

@@ -8,11 +8,6 @@ public class MainMenu : MonoBehaviour
     private void Start() //tu wczytujemy dane 
     {
         GameState.LoadMyGameState();
-
-        if (GameState.SoundOn)
-        {
-            FindObjectOfType<AudioManager>().Play("backgroundMenu");
-        }
     }
     public void PlayGame() // te funkcję można usunąć?
     {
