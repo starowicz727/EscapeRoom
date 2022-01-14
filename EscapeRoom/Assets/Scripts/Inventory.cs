@@ -1,30 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
     private bool inventoryEnabled;
     public GameObject inventory;
-    private int allSlots;
-    private int enabledSlots;
-    private GameObject[] slot;
-    public GameObject slotHolder;
+    public GameObject infoText;
+
+    public Transform slot1;
+    public Transform slot2;
+    public Transform slot3;
+
+    bool closed = false;
+
 
     private void Start()
     {
-        allSlots = 9;
-        slot = new GameObject[allSlots];
-
-        for(int i = 0; i < allSlots; i++)
-        {
-            slot[i] = slotHolder.transform.GetChild(i).gameObject;
-            
-            if(slot[i].GetComponent<Slot>().item == null)
-            {
-                slot[i].GetComponent<Slot>().empty = true;
-            }
-        }
+        slot1 = slot1.transform.GetChild(0);
+        slot2 = slot2.transform.GetChild(0);
+        slot3 = slot3.transform.GetChild(0);
     }
 
     void Update()
@@ -55,39 +51,58 @@ public class Inventory : MonoBehaviour
             {
                 if (other.gameObject.CompareTag("Item"))
                 {
-                    GameObject itemPickedUp = other.gameObject;
-                    Item item = itemPickedUp.GetComponent<Item>();
+                    GameObject easterEgg = other.gameObject;
 
-                    AddItem(itemPickedUp, item.ID, item.type, item.description, item.icon);
+                    easterEgg.SetActive(false);
+                    UpdateSlot(easterEgg);
+
                 }
             }
         }
     }
 
-    void AddItem(GameObject itemObjects, int itemID, string itemType, string itemDescription, Texture itemIcon)
+    private void UpdateSlot(GameObject easterEgg)
     {
-        for(int i = 0; i < allSlots; i++)
+        if (easterEgg.name.Equals("Broom"))
         {
-            if(slot[i].GetComponent<Slot>().empty)
-            {
-                itemObjects.GetComponent<Item>().pickedUp = true;
-
-                slot[i].GetComponent<Slot>().item = itemObjects;
-                slot[i].GetComponent<Slot>().icon = itemIcon;
-                slot[i].GetComponent<Slot>().type = itemType;
-                slot[i].GetComponent<Slot>().ID = itemID;
-                slot[i].GetComponent<Slot>().description = itemDescription;
-
-                itemObjects.transform.parent = slot[i].transform;
-                itemObjects.SetActive(false);
-
-                slot[i].GetComponent<Slot>().UpdateSlot();
-                slot[i].GetComponent<Slot>().empty = false;
-            }
-            return;
+            slot1.GetComponent<RawImage>().enabled = true;
+            ShowText();
+        }
+        else if (easterEgg.name.Equals("zdjecieBabci"))
+        {
+            slot2.GetComponent<RawImage>().enabled = true;
+            ShowText();
+        }
+        else if (easterEgg.name.Equals("znajdzka"))
+        {
+            slot3.GetComponent<RawImage>().enabled = true;
+            ShowText();
         }
     }
+    private void ShowText()
+    {
+        if (inventoryEnabled == false)
+        {
+            inventoryEnabled = true;
+            closed = true;
+        }
+        infoText.SetActive(true);
+        StartCoroutine(HideText());
+    }
 
-    
+    IEnumerator HideText()
+    {
+        yield return new WaitForSeconds(3);
+        infoText.SetActive(false);
+        if(closed == true)
+        {
+            yield return new WaitForSeconds(0);
+            inventoryEnabled = false;
+        }
+        
+    }
+
+
+
 
 }
