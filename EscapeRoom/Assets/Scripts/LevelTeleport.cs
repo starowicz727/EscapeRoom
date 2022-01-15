@@ -11,7 +11,21 @@ public class LevelTeleport : MonoBehaviour // skrypt dopisany do portalu
         {
             UnlockLevel();
             GameState.SaveMyGameState();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            if (SceneManager.GetActiveScene().name.Equals("Level3"))
+            {
+                if((GameState.LevelSpecialUnlocked = true) || (GameState.Item1Found && GameState.Item2Found && GameState.Item3Found))
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //tu wchodzimy na level z labiryntem
+                }
+                else
+                {
+                    SceneManager.LoadScene("Menu");
+                }
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
         }
     }
 
@@ -30,6 +44,5 @@ public class LevelTeleport : MonoBehaviour // skrypt dopisany do portalu
             GameState.Level3Finished = true;
         }
 
-        // jeszcze trzeba dodaæ unlock lvl special 
     }
 }
