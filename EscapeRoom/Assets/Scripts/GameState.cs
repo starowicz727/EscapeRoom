@@ -17,8 +17,8 @@ public class GameState : MonoBehaviour
     {
         DataSave.SaveGameState(Level2Unlocked, Level3Unlocked, Level3Finished, LevelSpecialUnlocked,Item1Found,Item2Found,Item3Found);
     }
-    public static void LoadMyGameState() // będziemy odczytywać dane przy Start() w menu 
-    {
+    public static void LoadMyGameState() // będziemy odczytywać dane przy Start() w menu oraz Start() przy BackgroundMusic.cs   
+    {                                                                                       //bo ten skrypt jest na każdej scenie
         PlayerData data = DataSave.LoadGameState();
         Level2Unlocked = data.Level2Unlocked;
         Level3Unlocked = data.Level3Unlocked;

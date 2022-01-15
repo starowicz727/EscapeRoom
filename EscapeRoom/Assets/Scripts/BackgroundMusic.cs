@@ -4,10 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class BackgroundMusic : MonoBehaviour
-{ //skrypt dodany do obiektu empty BackgroundMusic
+{ //skrypt dodany do obiektu AudioManager
 
     void Start()
     {
+        GameState.LoadMyGameState();
+
         if (SceneManager.GetActiveScene().name.Equals("Menu"))
         {
             FindObjectOfType<AudioManager>().Play("backgroundMenu");
