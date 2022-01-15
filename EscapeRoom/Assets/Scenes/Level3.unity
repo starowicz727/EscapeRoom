@@ -1815,7 +1815,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Congratulation you find Easter Egg!!!
+  m_Text: Congratulations, you found an Easter Egg!!!
 --- !u!222 &681485884
 CanvasRenderer:
   m_ObjectHideFlags: 0
