@@ -69,18 +69,21 @@ public class Inventory : MonoBehaviour
             slot1.GetComponent<RawImage>().enabled = true;
             GameState.Item1Found = true;
             ShowText();
+            GameState.SaveMyGameState();
         }
         else if (easterEgg.name.Equals("zdjecieBabci"))
         {
             slot2.GetComponent<RawImage>().enabled = true;
             GameState.Item2Found = true;
             ShowText();
+            GameState.SaveMyGameState();
         }
         else if (easterEgg.name.Equals("znajdzka"))
         {
             slot3.GetComponent<RawImage>().enabled = true;
             GameState.Item3Found = true;
             ShowText();
+            GameState.SaveMyGameState();
         }
     }
 

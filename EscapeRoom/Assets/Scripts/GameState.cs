@@ -28,5 +28,4 @@ public class GameState : MonoBehaviour
         Item2Found = data.Item2Found;
         Item3Found = data.Item3Found;
     }
-
 }
