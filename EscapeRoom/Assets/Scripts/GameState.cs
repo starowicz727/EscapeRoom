@@ -28,4 +28,16 @@ public class GameState : MonoBehaviour
         Item2Found = data.Item2Found;
         Item3Found = data.Item3Found;
     }
+
+    public static void ClearAllGameState() //użyte w levelmenu.cs StartNewGame()
+    {
+     Level2Unlocked = false;
+     Level3Unlocked = false;
+     Level3Finished = false;
+     LevelSpecialUnlocked = false;
+     Item1Found = false;
+     Item2Found = false;
+     Item3Found = false;
+     DataSave.SaveGameState(Level2Unlocked, Level3Unlocked, Level3Finished, LevelSpecialUnlocked, Item1Found, Item2Found, Item3Found);
+    }
 }

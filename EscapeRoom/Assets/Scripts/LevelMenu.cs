@@ -8,6 +8,7 @@ public class LevelMenu : MonoBehaviour
 {
     public Button btnLvl2, btnLvl3, btnLvlSpecial;
     public Button btnLvl2Img, btnLvl3Img, btnLvlSpecialImg;
+    
     private void Start()
     {
         if (GameState.Level2Unlocked)
@@ -30,7 +31,7 @@ public class LevelMenu : MonoBehaviour
             btnLvl3.interactable = false;
             btnLvl3Img.gameObject.SetActive(false);
         }
-        if ((GameState.LevelSpecialUnlocked = true) || (GameState.Item1Found && GameState.Item2Found && GameState.Item3Found))
+        if (GameState.Item1Found && GameState.Item2Found && GameState.Item3Found)
         {
             GameState.LevelSpecialUnlocked = true;
             btnLvlSpecial.interactable = true;
@@ -60,9 +61,10 @@ public class LevelMenu : MonoBehaviour
         SceneManager.LoadScene("Projekt");
     }
       
-    public void StartNewGame()//do dokończenia ?
+    public void StartNewGame()
     {
-
+        GameState.ClearAllGameState();
+        SceneManager.LoadScene("Level1");
     }
     
    
