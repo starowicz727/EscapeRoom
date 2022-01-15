@@ -21,6 +21,7 @@ public class Inventory : MonoBehaviour
         slot1 = slot1.transform.GetChild(0);
         slot2 = slot2.transform.GetChild(0);
         slot3 = slot3.transform.GetChild(0);
+        ShowFoundItemsOnStart();
     }
 
     void Update()
@@ -40,7 +41,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other) //TUTAJ JESZCZE CHYBA SPRAWDZIÆ TRZEBA BÊDZIE TAG 
+    private void OnTriggerStay(Collider other) 
     {
         //Debug.Log("Trigger");
         RaycastHit rayHit;
@@ -66,17 +67,36 @@ public class Inventory : MonoBehaviour
         if (easterEgg.name.Equals("Broom"))
         {
             slot1.GetComponent<RawImage>().enabled = true;
+            GameState.Item1Found = true;
             ShowText();
         }
         else if (easterEgg.name.Equals("zdjecieBabci"))
         {
             slot2.GetComponent<RawImage>().enabled = true;
+            GameState.Item2Found = true;
             ShowText();
         }
         else if (easterEgg.name.Equals("znajdzka"))
         {
             slot3.GetComponent<RawImage>().enabled = true;
+            GameState.Item3Found = true;
             ShowText();
+        }
+    }
+
+    private void ShowFoundItemsOnStart()
+    {
+        if(GameState.Item1Found == true)
+        {
+            slot1.GetComponent<RawImage>().enabled = true;
+        }
+        if(GameState.Item2Found == true)
+        {
+            slot2.GetComponent<RawImage>().enabled = true;
+        }
+        if(GameState.Item3Found == true)
+        {
+            slot3.GetComponent<RawImage>().enabled = true;
         }
     }
     private void ShowText()
