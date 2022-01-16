@@ -80,10 +80,10 @@ public class CzyOtwarte : MonoBehaviour //skrypt przypisany do zamka
         {
             switch (wheelName)
             {
-                case "minute":
+                case "Wheel1":
                     result[0] = number;
                     break;
-                case "hour":
+                case "Wheel2":
                     result[1] = number;
                     break;
             }

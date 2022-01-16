@@ -23132,7 +23132,7 @@ GameObject:
   - component: {fileID: 4879361846418007743}
   - component: {fileID: 4879361846418007744}
   m_Layer: 0
-  m_Name: hour
+  m_Name: Wheel2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23460,7 +23460,7 @@ GameObject:
   - component: {fileID: 7982502472546808395}
   - component: {fileID: 7982502472546808396}
   m_Layer: 0
-  m_Name: minute
+  m_Name: Wheel1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
