@@ -81,10 +81,11 @@ public class NPCskrypt : MonoBehaviour
         }
     } 
     private void OnCollisionEnter(Collision collision){
-            //private void OnCollisionEnter(Collider other){
         if (collision.collider.tag == "Player")
         {
-            SceneManager.LoadScene("Menu");
+            //mozna zrobic taka zscen posrednia ze sie wybiera mwnu albo labirynt
+            //moze to rozwiaze ten problem
+            SceneManager.LoadScene("Projekt");
         }    
     }  
     private void OnTriggerExit(Collider other)
