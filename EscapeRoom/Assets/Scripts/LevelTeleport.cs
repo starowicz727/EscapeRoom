@@ -13,13 +13,13 @@ public class LevelTeleport : MonoBehaviour // skrypt dopisany do portalu
             GameState.SaveMyGameState();
             if (SceneManager.GetActiveScene().name.Equals("Level3"))
             {
-                if((GameState.LevelSpecialUnlocked = true) || (GameState.Item1Found && GameState.Item2Found && GameState.Item3Found))
+                if(GameState.Item1Found && GameState.Item2Found && GameState.Item3Found)
                 {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //tu wchodzimy na level z labiryntem
                 }
                 else
                 {
-                    SceneManager.LoadScene("Menu");
+                    SceneManager.LoadScene("Menu"); 
                 }
             }
             else

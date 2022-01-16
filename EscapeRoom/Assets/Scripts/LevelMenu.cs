@@ -31,7 +31,7 @@ public class LevelMenu : MonoBehaviour
             btnLvl3.interactable = false;
             btnLvl3Img.gameObject.SetActive(false);
         }
-        if (GameState.Item1Found && GameState.Item2Found && GameState.Item3Found)
+        if ((GameState.Item1Found && GameState.Item2Found) && GameState.Item3Found)
         {
             GameState.LevelSpecialUnlocked = true;
             btnLvlSpecial.interactable = true;
