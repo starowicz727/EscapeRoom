@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
+
 
 public class NPCskrypt : MonoBehaviour
 {
@@ -77,7 +79,14 @@ public class NPCskrypt : MonoBehaviour
             cel = Gracz;
             agent.SetDestination(cel.position);
         }
-    }    
+    } 
+    private void OnCollisionEnter(Collision collision){
+            //private void OnCollisionEnter(Collider other){
+        if (collision.collider.tag == "Player")
+        {
+            SceneManager.LoadScene("Menu");
+        }    
+    }  
     private void OnTriggerExit(Collider other)
     {
         celLosowanie();
