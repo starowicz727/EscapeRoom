@@ -1,0 +1,88 @@
+newmtl blinn1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd WoodFloor_occlusion.png
+bump  -bm 1 WoodFloor_normals.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Floor_specular.png
+newmtl blinn3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd FirePlace2_occlusion.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks FirePlace2_Specular.png
+newmtl blinn4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd WallCobble_occlusion.png
+bump  -bm 1 WallCobble_normals.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks WallCobble_specular.png
+newmtl blinn5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Pot_occulusion.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Pot_specular.png
+newmtl blinn6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Web_occlusion.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Web_Specular.png
+newmtl blinn7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd books_Occlusion.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks books_Specular.png
+newmtl blinn8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wooden_occlusion.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Wooden_Specular.png
+newmtl blinn9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd candle_occlusion.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl blinn10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd fur_occlusion.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks fur_Specular.png
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
