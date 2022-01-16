@@ -2454,6 +2454,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a5d75bd62c80a478b15b0675013148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &246022479
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246022475}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.395046, y: 0.6768287, z: 6.0682616}
+  m_Center: {x: 0.13844755, y: 0.16158572, z: 0.28796124}
 --- !u!1 &250545080
 GameObject:
   m_ObjectHideFlags: 0
@@ -11635,15 +11648,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4108483488137408, guid: e2abddf6f84ba3c44bb9cb6a368e288e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.81
+      value: -29.28
       objectReference: {fileID: 0}
     - target: {fileID: 4108483488137408, guid: e2abddf6f84ba3c44bb9cb6a368e288e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.73
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 4108483488137408, guid: e2abddf6f84ba3c44bb9cb6a368e288e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.86
+      value: 4.454
       objectReference: {fileID: 0}
     - target: {fileID: 4108483488137408, guid: e2abddf6f84ba3c44bb9cb6a368e288e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19601,8 +19614,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.2984452, y: 1.5077621, z: 0.7699713}
-  m_Center: {x: 1.1159661, y: 2.5623064, z: -0.7567568}
+  m_Size: {x: 3.661943, y: 1.5077621, z: 3.072182}
+  m_Center: {x: 0.9342173, y: 2.5623064, z: -0.9427208}
 --- !u!1 &1852218890
 GameObject:
   m_ObjectHideFlags: 0
