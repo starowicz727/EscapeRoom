@@ -54,7 +54,7 @@ public class LevelMenu : MonoBehaviour
     }
     public void PlayLevel3()
     {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Level3");
     }
     public void PlaySpecialLevel()
     {
