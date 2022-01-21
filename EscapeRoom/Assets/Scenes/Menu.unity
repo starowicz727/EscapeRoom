@@ -10580,10 +10580,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bec6490eaa65e8e48adf27465757aa3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btnLvl2: {fileID: 0}
+  btnLvl2: {fileID: 425334128}
   btnLvl3: {fileID: 1298637165}
   btnLvlSpecial: {fileID: 772596557}
-  btnLvl2Img: {fileID: 0}
+  btnLvl2Img: {fileID: 1890804062}
   btnLvl3Img: {fileID: 829023170}
   btnLvlSpecialImg: {fileID: 568311857}
 --- !u!1 &508724065
