@@ -13,7 +13,7 @@ public class LevelTeleport : MonoBehaviour // skrypt dopisany do portalu
             GameState.SaveMyGameState();
             if (SceneManager.GetActiveScene().name.Equals("Level3"))
             {
-                if(GameState.Item1Found && GameState.Item2Found && GameState.Item3Found)
+                if((GameState.Item1Found && GameState.Item2Found) && GameState.Item3Found)
                 {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //tu wchodzimy na level z labiryntem
                 }
@@ -21,6 +21,10 @@ public class LevelTeleport : MonoBehaviour // skrypt dopisany do portalu
                 {
                     SceneManager.LoadScene("Menu"); 
                 }
+            }
+            else if(SceneManager.GetActiveScene().name.Equals("Projekt")) //jeœli wychodzimy z labiryntu
+            {
+                SceneManager.LoadScene("Menu");
             }
             else
             {
