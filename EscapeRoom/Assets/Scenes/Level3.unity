@@ -3094,6 +3094,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 2.75
       objectReference: {fileID: 0}
+    - target: {fileID: -4615857767994010831, guid: c4391da1558a06d4d84b58b93a2d4bb1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.7599994
+      objectReference: {fileID: 0}
+    - target: {fileID: -4615857767994010831, guid: c4391da1558a06d4d84b58b93a2d4bb1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.978
+      objectReference: {fileID: 0}
+    - target: {fileID: 481770881260776562, guid: c4391da1558a06d4d84b58b93a2d4bb1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.787
+      objectReference: {fileID: 0}
+    - target: {fileID: 481770881260776562, guid: c4391da1558a06d4d84b58b93a2d4bb1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.978
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c4391da1558a06d4d84b58b93a2d4bb1, type: 3}
       propertyPath: m_Name
       value: Environment_Scene
@@ -19829,8 +19845,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.661943, y: 1.5077621, z: 3.072182}
-  m_Center: {x: 0.9342173, y: 2.5623064, z: -0.9427208}
+  m_Size: {x: 7.894168, y: 1.5077621, z: 5.1351957}
+  m_Center: {x: 3.313768, y: 2.5623064, z: -0.8425811}
 --- !u!1 &1852218890
 GameObject:
   m_ObjectHideFlags: 0
