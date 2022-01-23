@@ -74,3 +74,9 @@ MonoBehaviour:
     volume: 0.105
     pitch: 1
     loop: 0
+  - name: prize
+    clip: {fileID: 8300000, guid: 2837f2e3330d0a449888ff8903dbdbbc, type: 3}
+    source: {fileID: 0}
+    volume: 0.105
+    pitch: 1
+    loop: 0
