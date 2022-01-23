@@ -93,7 +93,7 @@ public class CzyOtwarte : MonoBehaviour //skrypt przypisany do zamka
                 portal.SetActive(true);
                 FindObjectOfType<AudioManager>().Play("portal1");
             }
-        }
+        }      
     }
 
     private void onDestroy()
