@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class CzyOtwarte : MonoBehaviour //skrypt przypisany do zamka
 {
@@ -8,8 +10,9 @@ public class CzyOtwarte : MonoBehaviour //skrypt przypisany do zamka
     public GameObject portal;    
     public int Scena;
     public GameObject door;
+    //public static int lvl2portal;
     // Start is called before the first frame update
-    private void Start() //ustalenie wartoœci pocz¹tkowych oraz poprawnych odpowiedzi
+    private void Start() //ustalenie wartoï¿½ci poczï¿½tkowych oraz poprawnych odpowiedzi
     {
         if (Scena == 1) 
         {
@@ -28,7 +31,7 @@ public class CzyOtwarte : MonoBehaviour //skrypt przypisany do zamka
         }
         Rotacja.Rotated += CheckResults;
     }
-    private void CheckResults(string wheelName, int number) //sprawdzenie czy podane zosta³o w³aœciwe has³o
+    private void CheckResults(string wheelName, int number) //sprawdzenie czy podane zostaï¿½o wï¿½aï¿½ciwe hasï¿½o
     {
         if (Scena == 1)
         {
@@ -74,6 +77,15 @@ public class CzyOtwarte : MonoBehaviour //skrypt przypisany do zamka
                 portal.SetActive(true);
                 door.SetActive(false);
                 FindObjectOfType<AudioManager>().Play("portal1");
+                //lvl2portal = 1;
+
+                // if(portal == null){
+                //     SceneManager.LoadScene("Level3"); 
+                // }
+                
+                // if(portal == null || door == null){
+                //     SceneManager.LoadScene("Level3"); 
+                // }
             }
         }
         if (Scena == 3)
