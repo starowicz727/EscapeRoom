@@ -5536,7 +5536,7 @@ MeshCollider:
   m_GameObject: {fileID: 280634197}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -8459,7 +8459,7 @@ MeshCollider:
   m_GameObject: {fileID: 454303914}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -9277,7 +9277,7 @@ MeshCollider:
   m_GameObject: {fileID: 496640904}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -16148,6 +16148,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -16.19
       objectReference: {fileID: 0}
+    - target: {fileID: 2305936, guid: 9128fac7ecb9c4b4085275bbf85879ee, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2331620, guid: 9128fac7ecb9c4b4085275bbf85879ee, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -22604,7 +22608,7 @@ MeshCollider:
   m_GameObject: {fileID: 1095289999}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -38658,7 +38662,7 @@ MeshCollider:
   m_GameObject: {fileID: 2025940661}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -39575,7 +39579,7 @@ MeshCollider:
   m_GameObject: {fileID: 2057345650}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
