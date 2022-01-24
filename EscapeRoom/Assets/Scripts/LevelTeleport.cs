@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelTeleport : MonoBehaviour // skrypt dopisany do portalu 
 {
+    GameObject canvaWin;
     private void OnCollisionEnter(Collision collision)
     {
         if( collision.collider.tag == "Player")
@@ -13,14 +14,15 @@ public class LevelTeleport : MonoBehaviour // skrypt dopisany do portalu
             GameState.SaveMyGameState();
             if (SceneManager.GetActiveScene().name.Equals("Level3"))
             {
-                if((GameState.Item1Found && GameState.Item2Found) && GameState.Item3Found)
-                {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //tu wchodzimy na level z labiryntem
-                }
-                else
-                {
-                    SceneManager.LoadScene("Menu"); 
-                }
+                //if((GameState.Item1Found && GameState.Item2Found) && GameState.Item3Found)
+                //{
+                //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //tu wchodzimy na level z labiryntem
+                //}
+                //else
+                //{
+                //    SceneManager.LoadScene("Menu"); 
+                //}
+                canvaWin.SetActive(true);
             }
             else if(SceneManager.GetActiveScene().name.Equals("Projekt")) //jeœli wychodzimy z labiryntu
             {
