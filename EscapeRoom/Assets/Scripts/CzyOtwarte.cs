@@ -108,7 +108,7 @@ public class CzyOtwarte : MonoBehaviour //skrypt przypisany do zamka
         }      
     }
 
-    private void onDestroy()
+    private void OnDestroy()
     {
         Rotacja.Rotated -= CheckResults;
     }

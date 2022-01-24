@@ -8,6 +8,7 @@ public class LevelMenu : MonoBehaviour
 {
     public Button btnLvl2, btnLvl3, btnLvlSpecial;
     public Button btnLvl2Img, btnLvl3Img, btnLvlSpecialImg;
+    public GameObject letter;
     
     private void Start()
     {
@@ -66,6 +67,8 @@ public class LevelMenu : MonoBehaviour
         GameState.ClearAllGameState();
         SceneManager.LoadScene("Level1");
     }
-    
-   
+
+    public void Letter(){
+        letter.SetActive(true);
+    }     
 }

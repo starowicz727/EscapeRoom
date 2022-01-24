@@ -5624,7 +5624,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 279425976}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 296660997}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &279425976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5645,7 +5657,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cca093e2f924eb740b510c316f3ef99e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 35d0dfb92e5ad514fb4677dec143bb48, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6310,7 +6322,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &296660998
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12229,8 +12241,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 660873004}
-  - component: {fileID: 660873006}
-  - component: {fileID: 660873005}
   m_Layer: 0
   m_Name: Letter1
   m_TagString: Untagged
@@ -12254,36 +12264,6 @@ Transform:
   m_Father: {fileID: 296660998}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &660873005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660873003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abb3e3ea42791354e932c49818c67b9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonOn: {fileID: 0}
-  buttonOff: {fileID: 0}
-  onImage: {fileID: 21300000, guid: f8c40a61ae518314bacd50a0358c8811, type: 3}
-  onImageCh: {fileID: 21300000, guid: 1c0ff4cc67b10ab4988bdb25ab9d676b, type: 3}
-  offImage: {fileID: 21300000, guid: eb466ed60bf52e246898dfaaddeb33a9, type: 3}
-  offImageCh: {fileID: 21300000, guid: 9f4ae03b1909cd841a16b79db018a887, type: 3}
---- !u!114 &660873006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660873003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5883d3d7517901942a1e4f387e12b770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &665126370 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 102346, guid: 9128fac7ecb9c4b4085275bbf85879ee, type: 3}
