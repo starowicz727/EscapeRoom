@@ -21,13 +21,14 @@ public class menuController : MonoBehaviour
         {
             SceneManager.LoadScene("Level2");
         }
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            letter.SetActive(false);
-        }
+        // if (Input.GetKeyDown(KeyCode.O))
+        // {
+        //     letter.SetActive(false);
+        // }
         //esc uruchamia podreczne menu
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            letter.SetActive(false);
             if(!e){
                 //kursor na menu
                 menu.SetActive(true);
