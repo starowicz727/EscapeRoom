@@ -1312,6 +1312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 726589441}
+  won: {fileID: 728941343}
 --- !u!4 &170156282
 Transform:
   m_ObjectHideFlags: 0
@@ -3051,50 +3052,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ec98d5379f963149a2ae1800c3d072d, type: 3}
---- !u!1 &437072178
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 437072179}
-  - component: {fileID: 437072180}
-  m_Layer: 0
-  m_Name: letter2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &437072179
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 437072178}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 81.974075}
-  m_LocalScale: {x: 0.02037, y: 0.02037, z: 0.02037}
-  m_Children: []
-  m_Father: {fileID: 1318301608}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -444.98462, y: -156.90994}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &437072180
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 437072178}
-  m_CullTransparentMesh: 1
 --- !u!1 &442279386 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8415542741607108034, guid: 077fb9a0cb387c7429b31b8ad9abf388, type: 3}
@@ -5883,7 +5840,7 @@ RectTransform:
   m_Children:
   - {fileID: 427054308}
   m_Father: {fileID: 1318301608}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6053,7 +6010,7 @@ RectTransform:
   - {fileID: 1638296199}
   - {fileID: 934694097}
   m_Father: {fileID: 1318301608}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11120,7 +11077,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 437072179}
   - {fileID: 726589442}
   - {fileID: 728941344}
   m_Father: {fileID: 0}
@@ -13570,19 +13526,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1638296202}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 427054307}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: ReturnToMainMenu
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1638296202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13603,7 +13547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bba04659ccbd3564492849cbd7273b69, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3a43b6046e3868944bec59c21199c609, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17484,11 +17428,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3047e6484b317ed4ab606137225b285b, type: 3}
---- !u!1 &1973209499 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2514415804721688402, guid: 3047e6484b317ed4ab606137225b285b, type: 3}
-  m_PrefabInstance: {fileID: 1973209498}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1976454830 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1428154255958496, guid: 6ec98d5379f963149a2ae1800c3d072d, type: 3}
@@ -19615,7 +19554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdba6c24477a0f445adab3bb62872ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portal: {fileID: 1973209499}
+  portal: {fileID: 728941343}
   Scena: 3
   door: {fileID: 733600624}
 --- !u!64 &6816088068916830727

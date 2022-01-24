@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class menuController : MonoBehaviour
 {
     public GameObject menu;
-    //public GameObject letter;
+    public GameObject won;
     private bool e = false;
 
     public void Update()
@@ -28,7 +28,7 @@ public class menuController : MonoBehaviour
         //esc uruchamia podreczne menu
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            //letter.SetActive(false);
+            won.SetActive(false);
             if(!e){
                 //kursor na menu
                 menu.SetActive(true);

@@ -101,9 +101,10 @@ public class CzyOtwarte : MonoBehaviour //skrypt przypisany do zamka
             }
             if (result[0] == correctCombination[0] && result[1] == correctCombination[1])
             {
-                Debug.Log("Opened!");
+                //Debug.Log("Opened!");
                 portal.SetActive(true);
-                FindObjectOfType<AudioManager>().Play("portal1");
+                //FindObjectOfType<AudioManager>().Play("portal1");
+
             }
         }      
     }
