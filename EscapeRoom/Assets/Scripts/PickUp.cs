@@ -58,6 +58,10 @@ public class PickUp : MonoBehaviour //skrypt przypisany do kamery gracza
                     {
                         UpdateSlot(item);
                     }
+                    else if(item.tag == "letter")
+                    {
+                        item.GetComponent<LettersPick>().UpdateHole(item);
+                    }
                     else
                     {
                         PickupObject(item);

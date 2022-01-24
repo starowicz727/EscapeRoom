@@ -31,28 +31,28 @@ public class LettersPick : MonoBehaviour
         holeU2 = holeU2.transform.GetChild(0);
         holeS2 = holeS2.transform.GetChild(0);
     }
-    private void OnTriggerStay(Collider other)
-    {
-        Debug.Log("Trigger");
-        RaycastHit rayHit;
-        var ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
-        if (Input.GetMouseButtonDown(0))
-        {
-            Debug.Log("mysz");
-            if (Physics.Raycast(ray, out rayHit))
-            {
-                Debug.Log("ray");
-                if (other.gameObject.CompareTag("letter"))
-                {
-                    GameObject letter = other.gameObject;
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    Debug.Log("Trigger");
+    //    RaycastHit rayHit;
+    //    var ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
+    //    if (Input.GetMouseButtonDown(0))
+    //    {
+    //        Debug.Log("mysz");
+    //        if (Physics.Raycast(ray, out rayHit))
+    //        {
+    //            Debug.Log("ray");
+    //            if (other.gameObject.CompareTag("letter"))
+    //            {
+    //                GameObject letter = other.gameObject;
 
-                    letter.SetActive(false);
-                    UpdateHole(letter);
-                    Debug.Log("dziala");
-                }
-            }
-        }
-    }
+    //                letter.SetActive(false);
+    //                UpdateHole(letter);
+    //                Debug.Log("dziala");
+    //            }
+    //        }
+    //    }
+    //}
 
     public void UpdateHole(GameObject letter)
     {
