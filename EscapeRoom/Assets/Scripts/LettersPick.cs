@@ -54,7 +54,7 @@ public class LettersPick : MonoBehaviour
         }
     }
 
-    private void UpdateHole(GameObject letter)
+    public void UpdateHole(GameObject letter)
     {
         if (letter.name.Equals("h"))
         {

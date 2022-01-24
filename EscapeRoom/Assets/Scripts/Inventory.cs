@@ -41,27 +41,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other) 
-    {
-        //Debug.Log("Trigger");
-        //RaycastHit rayHit;
-        //var ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    if (Physics.Raycast(ray, out rayHit))
-        //    {
-        //        if (other.gameObject.CompareTag("Item"))
-        //        {
-        //            GameObject easterEgg = other.gameObject;
-
-        //            easterEgg.SetActive(false);
-        //            UpdateSlot(easterEgg);
-
-        //        }
-        //    }
-        //}
-    }
-
+    
     public void UpdateSlot(GameObject easterEgg)
     {
         easterEgg.SetActive(false);
