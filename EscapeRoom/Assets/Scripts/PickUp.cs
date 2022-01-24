@@ -158,6 +158,7 @@ public class PickUp : MonoBehaviour //skrypt przypisany do kamery gracza
             closed = true;
         }
         infoText.SetActive(true);
+        FindObjectOfType<AudioManager>().Play("prize");
         StartCoroutine(HideText());
     }
 

@@ -10,6 +10,7 @@ public class WallController : MonoBehaviour
     {
         if (other.tag == "vhsPlayer" && tag == "vhs")
         {
+            FindObjectOfType<AudioManager>().Play("vhs");
             StartAnim();
         }
     }

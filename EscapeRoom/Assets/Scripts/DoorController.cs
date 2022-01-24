@@ -11,8 +11,9 @@ public class DoorController : MonoBehaviour
         if(other.tag == "keyhole"){
            Animator anim = other.GetComponentInParent<Animator>();  
            anim.SetTrigger("keyInserted");
-           //explosion.gameObject.SetActive(true);
-           //collisionParticipant.SetActive(false);
+            FindObjectOfType<AudioManager>().Play("closet");
+            //explosion.gameObject.SetActive(true);
+            //collisionParticipant.SetActive(false);
         }
     }
 }
