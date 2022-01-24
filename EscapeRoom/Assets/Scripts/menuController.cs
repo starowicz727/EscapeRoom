@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class menuController : MonoBehaviour
 {
     public GameObject menu;
+    public GameObject letter;
     private bool e = false;
 
     public void Update()
@@ -19,6 +20,10 @@ public class menuController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             SceneManager.LoadScene("Level2");
+        }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            letter.SetActive(false);
         }
         //esc uruchamia podreczne menu
         if (Input.GetKeyDown(KeyCode.Escape))
