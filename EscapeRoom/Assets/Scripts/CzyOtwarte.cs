@@ -10,6 +10,7 @@ public class CzyOtwarte : MonoBehaviour //skrypt przypisany do zamka
     public GameObject portal;    
     public int Scena;
     public GameObject door;
+    public GameObject fireworks;
     //public static int lvl2portal;
     // Start is called before the first frame update
     private void Start() //ustalenie warto�ci pocz�tkowych oraz poprawnych odpowiedzi
@@ -103,6 +104,7 @@ public class CzyOtwarte : MonoBehaviour //skrypt przypisany do zamka
             {
                 //Debug.Log("Opened!");
                 portal.SetActive(true);
+                fireworks.SetActive(true);
                 //FindObjectOfType<AudioManager>().Play("portal1");
 
             }
