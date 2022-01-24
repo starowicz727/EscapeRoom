@@ -1222,13 +1222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d3cb644b86dd4d966e867e89e86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  description: 
-  empty: 0
-  slotIconGO: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &105328430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2695,7 +2688,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2e7e58f1247def140a03f81fbded6c83, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e7e58f1247def140a03f81fbded6c83, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5270,13 +5263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d3cb644b86dd4d966e867e89e86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  description: 
-  empty: 0
-  slotIconGO: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &629528287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5575,13 +5561,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d3cb644b86dd4d966e867e89e86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  description: 
-  empty: 0
-  slotIconGO: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &638444128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6657,13 +6636,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d3cb644b86dd4d966e867e89e86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  description: 
-  empty: 0
-  slotIconGO: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &782218563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7316,7 +7288,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2e7e58f1247def140a03f81fbded6c83, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e7e58f1247def140a03f81fbded6c83, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7560,13 +7532,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d3cb644b86dd4d966e867e89e86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  description: 
-  empty: 0
-  slotIconGO: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &861867210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7894,13 +7859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d3cb644b86dd4d966e867e89e86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  description: 
-  empty: 0
-  slotIconGO: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &885031978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13305,7 +13263,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2e7e58f1247def140a03f81fbded6c83, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e7e58f1247def140a03f81fbded6c83, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14001,13 +13959,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d3cb644b86dd4d966e867e89e86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  description: 
-  empty: 0
-  slotIconGO: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &995113818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14835,7 +14786,7 @@ RectTransform:
   m_Children:
   - {fileID: 1284874708}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -19936,7 +19887,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240478614}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.9, y: 0.85, z: -6.082}
+  m_LocalPosition: {x: -4.774, y: 0.85, z: -6.082}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 380673369}
@@ -20459,13 +20410,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d3cb644b86dd4d966e867e89e86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  description: 
-  empty: 0
-  slotIconGO: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &1289043144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20686,13 +20630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d3cb644b86dd4d966e867e89e86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  description: 
-  empty: 0
-  slotIconGO: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &1292410146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27500,7 +27437,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2e7e58f1247def140a03f81fbded6c83, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e7e58f1247def140a03f81fbded6c83, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27885,13 +27822,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d3cb644b86dd4d966e867e89e86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  description: 
-  empty: 0
-  slotIconGO: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &1608985301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30253,7 +30183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6067892559426125109, guid: 39c4505598bd6904684736d4c011e224, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6067892559426125109, guid: 39c4505598bd6904684736d4c011e224, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31280,13 +31210,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d3cb644b86dd4d966e867e89e86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  description: 
-  empty: 0
-  slotIconGO: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &2118697465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31483,7 +31406,7 @@ Transform:
   m_LocalScale: {x: 5.6662602, y: 5.6662602, z: 5.6662602}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &919132149468334062
 GameObject:
