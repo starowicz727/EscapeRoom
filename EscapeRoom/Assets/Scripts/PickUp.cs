@@ -58,10 +58,6 @@ public class PickUp : MonoBehaviour //skrypt przypisany do kamery gracza
                     {
                         UpdateSlot(item);
                     }
-                    else if(item.tag == "letter")
-                    {
-                        item.GetComponent<LettersPick>().UpdateHole(item);
-                    }
                     else
                     {
                         PickupObject(item);
@@ -113,7 +109,7 @@ public class PickUp : MonoBehaviour //skrypt przypisany do kamery gracza
         heldObj = null;
     }
 
-    public void UpdateSlot(GameObject easterEgg)
+    public void UpdateSlot(GameObject easterEgg) //wyœwietlenie odpowiedniego zdjêcia
     {
         easterEgg.SetActive(false);
         if (easterEgg.name.Equals("Broom"))
@@ -139,6 +135,7 @@ public class PickUp : MonoBehaviour //skrypt przypisany do kamery gracza
         }
     }
 
+
     private void ShowFoundItemsOnStart()
     {
         if (GameState.Item1Found == true)
@@ -154,6 +151,8 @@ public class PickUp : MonoBehaviour //skrypt przypisany do kamery gracza
             slot3.GetComponent<RawImage>().enabled = true;
         }
     }
+
+    //wyœwietlenie informacji o zebraniu znajdzki
     private void ShowText()
     {
         if (inventoryEnabled == false)
@@ -166,6 +165,7 @@ public class PickUp : MonoBehaviour //skrypt przypisany do kamery gracza
         StartCoroutine(HideText());
     }
 
+    //ukrycie schowka
     IEnumerator HideText()
     {
         yield return new WaitForSeconds(3);

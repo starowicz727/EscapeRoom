@@ -20946,7 +20946,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 20.812, y: -6.9374}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1000287996
 MonoBehaviour:
@@ -20968,7 +20968,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 50c3551bf7ec38d46863fe5f33771d9a, type: 3}
+  m_Texture: {fileID: 2800000, guid: ae58eb536b6de454b92190cf92a026e4, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -26721,6 +26721,7 @@ MonoBehaviour:
   portal: {fileID: 685495353}
   Scena: 1
   door: {fileID: 0}
+  fireworks: {fileID: 0}
 --- !u!1 &1330877464
 GameObject:
   m_ObjectHideFlags: 0
@@ -30157,6 +30158,7 @@ MonoBehaviour:
   portal: {fileID: 919132148439400139}
   Scena: 1
   door: {fileID: 0}
+  fireworks: {fileID: 0}
 --- !u!1 &1582408913 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 157904, guid: 9128fac7ecb9c4b4085275bbf85879ee, type: 3}
@@ -34348,28 +34350,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300432, guid: ba37eba8728fa144e8ebab6a89327cf7, type: 3}
---- !u!1 &1774140482 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1743903104223250, guid: 2e62f5703e5f8d2488a5e1bc8433be41, type: 3}
-  m_PrefabInstance: {fileID: 2029122200}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1774140483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1774140482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f44b15057731304489df2e7975a30e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory: {fileID: 1533247924}
-  infoText: {fileID: 1707953264}
-  slot1: {fileID: 616856662}
-  slot2: {fileID: 131196085}
-  slot3: {fileID: 732834876}
 --- !u!1 &1775297976 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 197084, guid: 9128fac7ecb9c4b4085275bbf85879ee, type: 3}
