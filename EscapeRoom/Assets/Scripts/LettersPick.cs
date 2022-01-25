@@ -58,7 +58,6 @@ public class LettersPick : MonoBehaviour
     {
         if (letter.name.Equals("h"))
         {
-            Debug.Log(holeH.GetComponent<RawImage>());
             holeH.GetComponent<RawImage>().enabled = true;
             ileZebranych++;
         }
