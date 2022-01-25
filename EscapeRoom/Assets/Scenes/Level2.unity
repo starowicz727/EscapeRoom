@@ -202,13 +202,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d3cb644b86dd4d966e867e89e86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  description: 
-  empty: 0
-  slotIconGO: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &686300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13130,13 +13123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d3cb644b86dd4d966e867e89e86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  description: 
-  empty: 0
-  slotIconGO: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &1201912813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13745,7 +13731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1238180816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16521,13 +16507,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d3cb644b86dd4d966e867e89e86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  description: 
-  empty: 0
-  slotIconGO: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &1440036564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17254,13 +17233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d3cb644b86dd4d966e867e89e86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  description: 
-  empty: 0
-  slotIconGO: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &1529039799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22816,7 +22788,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1958472003
 RectTransform:
   m_ObjectHideFlags: 0
