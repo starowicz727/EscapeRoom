@@ -33,16 +33,16 @@ public class PlayerScript : MonoBehaviour
         // Leczenie();
         // IleZycia();
 
-        //lvl 3
-        if(Input.GetKeyDown(KeyCode.H))
-        {
-            SceneManager.LoadScene("Level3");
-        }
-        //menu
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            SceneManager.LoadScene("Menu");
-        }
+        // //lvl 3
+        // if(Input.GetKeyDown(KeyCode.H))
+        // {
+        //     SceneManager.LoadScene("Level3");
+        // }
+        // //menu
+        // if (Input.GetKeyDown(KeyCode.M))
+        // {
+        //     SceneManager.LoadScene("Menu");
+        // }
     }
     // private void OnTriggerStay(Collider other)
     // {

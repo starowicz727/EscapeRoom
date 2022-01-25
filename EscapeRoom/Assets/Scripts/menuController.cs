@@ -17,10 +17,10 @@ public class menuController : MonoBehaviour
         //     Application.Quit();
         // }
         //do testu
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            SceneManager.LoadScene("Level2");
-        }
+        // if (Input.GetKeyDown(KeyCode.T))
+        // {
+        //     SceneManager.LoadScene("Level2");
+        // }
         // if (Input.GetKeyDown(KeyCode.O))
         // {
         //     letter.SetActive(false);
