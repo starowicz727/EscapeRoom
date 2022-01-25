@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class NPCskrypt : MonoBehaviour
 {
-    // jeśli bez losowania to wystarcza 2 cele
+    //cele NPC
     public Transform cel1;
     public Transform cel2;
     public Transform cel3;
@@ -27,23 +27,7 @@ public class NPCskrypt : MonoBehaviour
 
     private void Update()
     {
-        // wersja bez losowania
-        //if (NPC.position.x == cel.position.x) 
-        //{
-        //    if(cel == cel2)
-        //    {
-        //        cel = cel1;
-        //    }
-        //    else
-        //    {
-        //        cel = cel2;
-        //    }
-        //    agent = this.GetComponent<NavMeshAgent>();
-        //    agent.SetDestination(cel.position);
-            
-        //}
-
-        //wersja z losowaniem
+        //losowanie celu NPC
         if (NPC.position.x == cel.position.x)
         {
             agent = this.GetComponent<NavMeshAgent>();
@@ -72,6 +56,8 @@ public class NPCskrypt : MonoBehaviour
             cel = cel4;
         }
     }
+
+    //ustawienie gracza jako cel, jeśli wejdzie w trigger NPC
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -79,15 +65,17 @@ public class NPCskrypt : MonoBehaviour
             cel = Gracz;
             agent.SetDestination(cel.position);
         }
-    } 
+    }
+
+    //zresetowanie sceny jesli NPC dotknie gracza
     private void OnCollisionEnter(Collision collision){
         if (collision.collider.tag == "Player")
         {
-            //mozna zrobic taka zscen posrednia ze sie wybiera mwnu albo labirynt
-            //moze to rozwiaze ten problem
             SceneManager.LoadScene("Projekt");
         }    
     }  
+
+    //wylosowanie nowego celu po opuszczeniu triggera NPC przez gracza
     private void OnTriggerExit(Collider other)
     {
         celLosowanie();
